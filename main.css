@@ -38,12 +38,6 @@ main {
     display: flex; /* горизонтальное размещение элементов */
 } 
 
-.current { 
-    background-color: whitesmoke; /* цвет фона */
-    border-radius: 30px; /* скругление углов */
-    padding: 5px; /* внутренние отступы */
-} 
-
 a { 
     color: black; /* цвет текста */
     text-decoration: none; /* убираем подчеркивание ссылок */
@@ -76,3 +70,16 @@ footer {
     width: 100%; /* ширина на сайте */
     position: fixed; /* фиксируем футер на месте при прокрутке */
 } 
+
+.video_content{
+    text-align: center;
+    margin-top: 20px;
+}
+.text_video{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 40px;
+    font-style: italic;
+    border: 3px solid rgb(0,114,197);
+    padding: auto;
+}
