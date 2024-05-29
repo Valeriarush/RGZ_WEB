@@ -1,14 +1,12 @@
-/* Общие стили для всего документа */
 body { 
     font-family: 'Roboto Condensed', sans-serif; /* шрифт */
     margin: 0; /* убираем отступы */
     padding: 0; /* убираем внутренние отступы */
     box-sizing: border-box; /* границы элементов в общей ширине и высоте */
-    background-color: whitesmoke;
+    background-color: mintcream;
     margin-bottom: 60px; /* отступ снизу */
 } 
 
-/* Стили для шапки */
 header { 
     background-color: rgb(0,114,197); /* цвет фона */
     top: 0; /* шапку вверху страницы */
@@ -22,13 +20,11 @@ header {
 
 } 
 
-/* Стили для основного содержимого страницы */
 main { 
     margin-top: 120px;
     text-align: center;
 } 
 
-/* Стили для логотипа */
 .logo { 
     width: 90px; /* устанавливаем ширину логотипа */
     right: 0; /* располагаем логотип справа */
@@ -36,20 +32,24 @@ main {
 
 ul{
     list-style-type: none;
-
 }
 .menu-container { 
     display: flex; /* горизонтальное размещение элементов */
     padding: 0 25px;
 } 
 
-a { 
+a{
+    color:  rgb(0,114,197);
+    text-decoration: none;
+}
+
+.menu-container a { 
     color: black; /* цвет текста */
     text-decoration: none; /* убираем подчеркивание ссылок */
     position: relative; /* позиционирование */
 } 
 
-a:hover { 
+.menu-container a:hover { 
     background-color: rgb(0,114,197); /* цвет фона при наведении */
     color: whitesmoke; /* цвет текста при наведении */
     text-decoration: underline; /* подчеркивание при наведении */
@@ -93,4 +93,12 @@ footer {
     display: block;
     margin: auto;
     width: 50%;
+}
+
+.text{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 1.5em; /* интервал */
+    text-indent: 1em; /* красная строка */
 }
