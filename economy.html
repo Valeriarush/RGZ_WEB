@@ -1,59 +1,84 @@
-<!DOCTYPE html> 
-<html lang="ru"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>ОГК-2</title> 
-    <style>
-        body{
-            font-size: 18px;
-        }
+<!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>ОГК-2</title>  
+    <style> 
+        body { 
+            font-size: 18px; 
+        } 
+ 
+        table { 
+            font-size: 16px; 
+            width: 50%; 
+            margin: auto; 
+            border-collapse: collapse;
+        } 
 
-        table{
-            font-size: 16px;
-            width: 50%;
-            margin: auto;
+        th, td { 
+            padding: 8px 12px; 
+            text-align: left; 
+            border: 1px solid #ddd;
+        } 
+
+        caption {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: darkblue;
         }
-    </style>
-    <link rel="stylesheet" href="main.css">
-    <script src="economy.js"></script>
-</head> 
-<body> 
-    <header> 
-        <img class="logo" src="РГЗ_ЛОГО.jpg"> 
-        <div class="menu-container">
-            <ul> 
-                <li><a href="menu.html">О компании</a></li> 
-            </ul> 
-            <ul> 
-                <li><a href="economy.html">Основные финансовые показатели</a></li> 
-            </ul> 
-            <ul> 
-                <li><a href="contacts.html">Контактные данные</a></li> 
-            </ul> 
-            <ul> 
-                <li><a href="video.html">Видео</a></li> 
+    </style> 
+    <link rel="stylesheet" href="main.css"> 
+    <script src="economy.js"></script> 
+</head>  
+<body>  
+    <header>  
+        <img class="logo" src="РГЗ_ЛОГО.jpg">  
+        <div class="menu-container"> 
+            <ul>  
+                <li><a href="menu.html">О компании</a></li>  
             </ul>  
-        </div>   
-        </div>           
-    </header> 
-    <main> 
-        <div>
-            <b>Капитализация на текущий момент составляет:</b>110 441 160 000RUB <br>
-            <b>Объем торгов акций:</b> 55 323 938 RUB<br>
-        </div>
-
-        <div>
-            <button onclick="stockPrice()">Курс закрытия акций на апрель 2023 года</button>
-            <table border="1" id="stock-price" style="margin: auto;"></table>
-            <div id="average-price"></div>
-            <div id="min"></div>
-            <div id="max"></div>
-        </div>
-    </main> 
-    <footer> 
-        &copy; Дядюн Валерия, ФБИ-13, 3 курс, 2024 
-    </footer> 
-</body> 
+            <ul>  
+                <li><a href="economy.html">Основные финансовые показатели</a></li>  
+            </ul>  
+            <ul>  
+                <li><a href="contacts.html">Контактные данные</a></li>  
+            </ul>  
+            <ul>  
+                <li><a href="video.html">Видео</a></li>  
+            </ul>   
+        </div>    
+        </div>            
+    </header>  
+    <main>  
+        <div> 
+            <b>Капитализация на текущий момент составляет:</b> 110 441 160 000 RUB <br> 
+            <b>Объем торгов акций:</b> 55 323 938 RUB<br> 
+        </div> 
+ 
+        <div> 
+            <button onclick="stockPrice()">Курс закрытия акций на апрель 2023 года</button> 
+            <table id="stock-price" style="margin: auto;">
+                <caption>Цены закрытия за апрель</caption>
+                <thead>
+                    <tr>
+                        <th style="color: darkblue; text-align: center;">Дата</th>
+                        <th style="color: darkblue; text-align: center;">Цена</th>
+                        <th style="color: darkblue; text-align: center;">Разница</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table> 
+            <div id="average-price"></div> 
+            <div id="min"></div> 
+            <div id="max"></div> 
+        </div> 
+    </main>  
+    <footer>  
+        &copy; Дядюн Валерия, ФБИ-13, 3 курс, 2024  
+    </footer>  
+</body>  
 </html>
