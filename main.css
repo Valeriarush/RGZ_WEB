@@ -19,13 +19,13 @@ header {
     font-family: 'Roboto Condensed', sans-serif; /* шрифт */
     font-size: 26px; /* размер шрифта */
     display: flex; /* расположение элементов в одну линию */
-    align-items: center; /* выравниваем по центру */
+
 } 
 
 /* Стили для основного содержимого страницы */
 main { 
-    margin-right: 40px; /* устанавливаем правый отступ */
-    margin-left: 40px; /* устанавливаем левый отступ */
+    margin-top: 120px;
+    text-align: center;
 } 
 
 /* Стили для логотипа */
