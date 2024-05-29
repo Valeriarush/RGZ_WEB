@@ -34,8 +34,13 @@ main {
     right: 0; /* располагаем логотип справа */
 } 
 
+ul{
+    list-style-type: none;
+
+}
 .menu-container { 
     display: flex; /* горизонтальное размещение элементов */
+    padding: 0 25px;
 } 
 
 a { 
@@ -82,4 +87,10 @@ footer {
     font-style: italic;
     border: 3px solid rgb(0,114,197);
     padding: auto;
+}
+
+.zavod{
+    display: block;
+    margin: auto;
+    width: 50%;
 }
