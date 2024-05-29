@@ -1,0 +1,78 @@
+/* Общие стили для всего документа */
+body { 
+    font-family: 'Roboto Condensed', sans-serif; /* шрифт */
+    margin: 0; /* убираем отступы */
+    padding: 0; /* убираем внутренние отступы */
+    box-sizing: border-box; /* границы элементов в общей ширине и высоте */
+    background-color: whitesmoke;
+    margin-bottom: 40px; /* отступ снизу */
+} 
+
+/* Стили для шапки */
+header { 
+    background-color: rgb(0,114,197); /* цвет фона */
+    top: 0; /* шапку вверху страницы */
+    height: 10%; /* высота шапки */
+    width: 100%; /* занимает всю ширину */
+    position: fixed; /* фиксируем шапку на месте при прокрутке */
+    padding: 25px; /* внутренние отступы */
+    font-family: 'Roboto Condensed', sans-serif; /* шрифт */
+    font-size: 26px; /* размер шрифта */
+    display: flex; /* расположение элементов в одну линию */
+    align-items: center; /* выравниваем по центру */
+} 
+
+/* Стили для основного содержимого страницы */
+main { 
+    margin-right: 40px; /* устанавливаем правый отступ */
+    margin-left: 40px; /* устанавливаем левый отступ */
+} 
+
+/* Стили для логотипа */
+.logo { 
+    width: 90px; /* устанавливаем ширину логотипа */
+    right: 0; /* располагаем логотип справа */
+} 
+
+.menu-container { 
+    display: flex; /* горизонтальное размещение элементов */
+} 
+
+.current { 
+    background-color: whitesmoke; /* цвет фона */
+    border-radius: 30px; /* скругление углов */
+    padding: 5px; /* внутренние отступы */
+} 
+
+a { 
+    color: black; /* цвет текста */
+    text-decoration: none; /* убираем подчеркивание ссылок */
+    position: relative; /* позиционирование */
+} 
+
+a:hover { 
+    background-color: rgb(0,114,197); /* цвет фона при наведении */
+    color: whitesmoke; /* цвет текста при наведении */
+    text-decoration: underline; /* подчеркивание при наведении */
+    position: relative; /* позиционирование */
+    border-radius: 10px; /* скругление углов */
+    padding: 5px; /* внутренние отступы */
+} 
+
+dt { 
+    text-align: center; /* текст по горизонтали */
+} 
+
+footer { 
+    background: rgb(0,114,197); /* цвет фона */
+    color: whitesmoke; /* цвет текста */
+    padding: 5px; /* внутренние отступы */
+    font-weight: bold; /* жирное начертание */
+    text-decoration: solid; /* стиль текста */
+    font-size: 30px; /* шрифт */
+    font-style: italic; /* курсив */
+    text-align: left; /* выравниваем по левому краю */
+    bottom: 0; /* футер внизу страницы */
+    width: 100%; /* ширина на сайте */
+    position: fixed; /* фиксируем футер на месте при прокрутке */
+} 
