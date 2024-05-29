@@ -5,7 +5,7 @@ body {
     padding: 0; /* убираем внутренние отступы */
     box-sizing: border-box; /* границы элементов в общей ширине и высоте */
     background-color: whitesmoke;
-    margin-bottom: 40px; /* отступ снизу */
+    margin-bottom: 60px; /* отступ снизу */
 } 
 
 /* Стили для шапки */

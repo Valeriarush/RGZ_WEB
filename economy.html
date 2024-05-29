@@ -5,7 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>ОГК-2</title> 
-    <link rel="stylesheet" href="main.css"> 
+    <style>
+        body{
+            font-size: 18px;
+        }
+
+        table{
+            font-size: 16px;
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="main.css">
+    <script src="economy.js"></script>
 </head> 
 <body> 
     <header> 
@@ -26,7 +38,18 @@
         </div>           
     </header> 
     <main> 
+        <div>
+            <b>Капитализация на текущий момент составляет:</b>110 441 160 000RUB <br>
+            <b>Объем торгов акций:</b> 55 323 938 RUB<br>
+        </div>
 
+        <div>
+            <button onclick="stockPrice()">Курс закрытия акций на апрель 2023 года</button>
+            <table border="1" id="stock-price" style="margin: auto;"></table>
+            <div id="average-price"></div>
+            <div id="min"></div>
+            <div id="max"></div>
+        </div>
     </main> 
     <footer> 
         &copy; Дядюн Валерия, ФБИ-13, 3 курс, 2024 
